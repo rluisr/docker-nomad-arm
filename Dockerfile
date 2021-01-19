@@ -1,5 +1,13 @@
 FROM ubuntu:21.04
 
+LABEL maintainer="rluisr" \
+  org.opencontainers.image.url="https://github.com/rluisr/docker-nomad-arm" \
+  org.opencontainers.image.source="https://github.com/rluisr/docker-nomad-arm" \
+  org.opencontainers.image.vendor="rluisr" \
+  org.opencontainers.image.title="docker-nomad-arm" \
+  org.opencontainers.image.description="A container image installed Nomad(arm64)" \
+  org.opencontainers.image.licenses="WTFPL"
+
 RUN set -eux; \
   apt-get update -y; \
   apt-get install wget unzip -y; \
